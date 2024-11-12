@@ -1,18 +1,13 @@
-let nombreTest = 15;
-let resultat;
+let nombre = 30;
 
-if (nombreTest % 3 === 0 && nombreTest % 5 != 0) {
-  resultat("Fizz");
+let printable = "";
+
+if (nombre % 3 === 0) {
+  printable += "fizz";
 }
 
-if (nombreTest % 5 === 0 && nombreTest % 3 != 0) {
-  resultat("Fizz");
+if (nombre % 5 === 0) {
+  printable += "buzz";
 }
 
-if (nombreTest % 3 === 0 && nombreTest % 5 == 0) {
-  resultat("fizzbuzz");
-}
-
- 
-console.log(resultat || nombreTest);
-
+console.log(printable || nombre);
